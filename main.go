@@ -29,9 +29,9 @@ func main() {
 		uriSplit := strings.Split(uri, "/")
 		mainPath := uriSplit[1]
 		if mainPath != "" {
-			http.FileServer(http.Dir("./static"))
+			http.ServeFile(w, r, mainPath)
 		} else {
-			fmt.Fprintf(w, "Should showing default index.html")
+			http.ServeFile(w, r, "./index.html")
 		}
 	})
 
