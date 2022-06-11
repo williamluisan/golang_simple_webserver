@@ -29,7 +29,7 @@ if success run the program, try to access via your web browser:
 * http://localhost:8081/download/sample.pdf
 * http://localhost:8081/download/sample.jpg  
 
-All the website content are inside the root folder `./public_html`  
+All the website contents are inside the root folder `./public_html`  
 To change the configuration can do on this file `./env`
 
 
